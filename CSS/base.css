@@ -1,14 +1,16 @@
 /* Variaveis */
 :root{
+    /* Cores */ 
     --branco: #fff;
     --preto: #000000;
     --vermelho: #B2231D;
     --shadow: rgba(0, 0, 0, 0.468) 0px 5px 15px;
-    --fundo: rgba(0, 0, 0, 0.7)
+    --fundo: rgba(0, 0, 0, 0.7);
+
+    /* Fontes */
+   --alta: 'Alta', sans-serif;
+   --montesserat: 'Montserrat',sans-serif;
 }
-
-/* Fontes */
-
 /* Base Geral */
 *{
     margin: 0;
@@ -17,6 +19,7 @@
     text-decoration: none;
     background-color: transparent;
 }
+
 
 html{
     scroll-behavior: smooth;

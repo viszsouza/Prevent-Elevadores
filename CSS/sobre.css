@@ -1,0 +1,56 @@
+@import url("base.css");
+
+/* Main */
+main{
+    padding: 80px 110px;
+}
+
+/* Container */
+section.container-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Título + Sobre + Dados */
+h1.content-h1{
+    color: var(--vermelho);
+    font-size: 48px;
+    font-weight: 600;
+    font-family: var(--montesserat);
+}
+
+p.content-p{
+    width: 630px;
+    margin: 15px 0 30px 0;
+    font-size: 24px;
+    font-weight: 200;
+    font-family: var(--montesserat);
+}
+
+div.container-dados{
+    width: fit-content;
+    display: flex;
+    gap: 90px;
+    color: var(--vermelho);
+}
+
+div.content-dados > h2{
+    text-align: center;
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--montesserat);
+}
+
+div.content-dados > p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--montesserat);
+}
+
+/* Imagem */
+section.container-center > img{
+    width: 440px;
+    height: 465px;
+}
