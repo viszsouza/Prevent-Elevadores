@@ -88,6 +88,8 @@ nav{
 }
 
 .roxo{
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px; /* Espessura da linha */
     color: var(--vermelho);
 }
 
@@ -97,6 +99,7 @@ nav{
 }
 
 .nav-select{
+    
     text-decoration: underline;
 }
 
