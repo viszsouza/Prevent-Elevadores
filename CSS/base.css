@@ -4,13 +4,16 @@
     --branco: #fff;
     --preto: #000000;
     --vermelho: #B2231D;
+    --azul-pastel: #617DF3;
     --shadow: rgba(0, 0, 0, 0.468) 0px 5px 15px;
     --fundo: rgba(0, 0, 0, 0.7);
 
     /* Fontes */
    --alta: 'Alta', sans-serif;
    --montesserat: 'Montserrat',sans-serif;
+   --lora: "Lora", serif;
 }
+
 /* Base Geral */
 *{
     margin: 0;
@@ -60,7 +63,7 @@ nav{
     align-items: center;
     background-color: var(--branco);
 
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--montesserat);
 
     position: sticky;
     top: 0;

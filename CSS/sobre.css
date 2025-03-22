@@ -53,4 +53,128 @@ div.content-dados > p{
 section.container-center > img{
     width: 440px;
     height: 465px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Footer */
+footer{
+    padding: 30px 110px 30px 110px;
+    color: var(--branco);
+    background-color: var(--vermelho);
+}
+
+/* Parte de Cima */
+section.parteDeCima{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo + Informaçõe */
+div.footer-containerInfo{
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Logo do footer */
+img.footer-img{
+    width: 310px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+/* Localização, Whatsapp e Localização */
+div.footer-infos{
+    width: fit-content;
+    gap: 5px;
+}
+
+i.info-icon{
+    font-size: 20px;
+}
+
+div.footer-infos span{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--lora);
+}
+
+div.footer-infos p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: var(--lora);
+}
+
+/* Link da localização */
+div.footer-infos a{
+    color: var(--branco);
+}
+
+div.footer-infos a:hover{
+    text-decoration: underline;
+}
+
+/* Mapa */
+div.mapa{
+    width: fit-content;
+}
+
+div.mapa > h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--lora);
+}
+
+div.mapa > iframe{
+    width: 440px;
+    height: 465px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Linha divisória */
+div.footer-linhaDivisoria{
+    height: 1px;
+    width: 100%;
+    margin: 50px 0 25px 0;
+    background-color: var(--branco);
+}
+
+/* Parte de baixo */
+section.parteDeBaixo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.parteDeBaixo p, a{
+    font-size: 15px;
+}
+
+section.parteDeBaixo a{
+    color: var(--branco);
+}
+
+section.parteDeBaixo a:hover{
+    text-decoration: underline;
+}
+
+section.parteDeBaixo > div{
+    display: flex;
+    gap: 20px;
+}
+
+section.parteDeBaixo i{
+    font-size: 25px;
+}
+
+section.parteDeBaixo i:hover{
+    transition: 300ms;
+    color: var(--azul-pastel);
 }
