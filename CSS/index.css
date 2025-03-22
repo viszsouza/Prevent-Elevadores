@@ -1,0 +1,471 @@
+@import url("base.css");
+
+/* Inicio */
+.inicio{
+    background-image: url('/IMG/imgHOME/header.png');
+    background-color: var(--preto);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    padding: 40px 20px;
+    object-fit: cover;
+}
+
+.container-inicio{
+    position: relative;
+    margin-left: 5%;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-inicio h1{
+    font-family: 'Alta', sans-serif;
+    font-size: 64px;
+    color: var(--branco);
+}
+
+.container-inicio p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    color: var(--branco);
+}
+
+.buttons-inicio{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons-inicio button{
+    background-color: var(--branco);
+    padding: 10px 20px;
+    border: solid 3px var(--vermelho);
+
+    color: var(--vermelho);
+    font-size: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+
+    transition: 300ms;
+    box-shadow: var(--shadow);
+}
+
+.buttons-inicio button:hover{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    transform: scale(1.05);
+}
+
+/* Frase 3C 3S */
+.frase3{
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.frase3-img img{
+    width: 200px;
+}
+
+.frase3-text{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 26px;
+    gap: 10px;
+    text-align: justify;
+}
+
+.frase3-text span{
+    color: var(--vermelho);
+}
+
+/* Sobre */
+.sobre{
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre-text{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 26px;
+    gap: 40px;
+}
+
+.sobre-text h1{
+    color: var(--vermelho);
+}
+
+.sobre-img img{
+    width: 300px;
+}
+
+/* Nossos Diferencias */
+.diferenciais{
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.diferenciais h1{
+    color: var(--vermelho);
+    font-size: 40px;
+}
+
+.dif1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 40px;
+}
+
+.dif1-img img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+
+.dif1-text{
+    max-width: 600px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dif1-text h1{
+    font-size: 32px;
+}
+
+.dif1-text p{
+    font-size: 24px;
+}
+
+.dif2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    gap: 40px;
+}
+
+.dif2-img img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+
+.dif2-text{
+    max-width: 600px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dif2-text h1{
+    font-size: 32px;
+}
+
+.dif2-text p{
+    font-size: 24px;
+}
+
+/* Serviços */
+.serviços{
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.serviços h1{
+    color: var(--vermelho);
+    font-size: 36px;
+}
+
+.container-serviços{
+    display: flex;
+    gap: 40px;
+}
+
+.container-item-serviço{
+    background-color: var(--vermelho);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.container-item-serviço img{
+    width: 350px;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.container-item-serviço-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+.container-item-serviço-text h1{
+    color: var(--branco);
+    border-bottom: solid 1px var(--branco);
+    font-size: 26px;
+}
+
+.container-item-serviço-text p{
+    background-color: var(--branco);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/* Estilização da seção de depoimentos */
+section#depoimentos-secao {
+    position: relative;
+    padding: 40px 20px;
+    margin: 0 auto;
+    background-color: var(--branco);
+}
+
+.title-dep h1{
+    text-align: center;
+    font-family: "Alta", sans-serif;
+    font-size: 36px;
+    color: var(--vermelho);
+}
+
+.title-dep p{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: var(--preto);
+}
+
+/* Estilização dos botôes do carousel */
+#depoimentos-secao .carousel-button {
+    position: absolute;
+    top: calc(50% - 18px);
+
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    background-color: rgba(200, 200, 200, .5);
+    color: rgba(0, 0, 0, .5);
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    transition: all 150ms ease-in-out;
+}
+
+#depoimentos-secao .carousel-button:hover {
+    top: calc(50% - 20px);
+    height: 40px;
+    width: 40px;
+    background-color: rgba(200, 200, 200, .9);
+    color: var(--preto);
+    font-size: 35px;
+}
+
+/* Posicionamento dos botões do carousel */
+#depoimentos-secao #anterior {
+    left: 5%;
+}
+
+#depoimentos-secao #proximo {
+    right: 5%;
+}
+
+/* Estilização da div onde estarão os depoimentos*/
+#depoimentos {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+/* Estilização dos cards de depoimento */
+.depoimento {
+    flex-shrink: none;
+    flex-grow: none;
+    scroll-behavior: smooth;
+    padding: 30px;
+    min-height: 360px;
+    min-width: 320px;
+    border-radius: 25px;
+}
+
+/* Colorização dos cards de depoimento */
+.depoimento:nth-child(3n + 1) {
+    background-color: var(--vermelho);
+}
+
+.depoimento:nth-child(3n + 2) {
+    background-color: var(--vermelho);
+}
+
+.depoimento:nth-child(3n + 3) {
+    background-color: var(--vermelho);
+}
+
+/* Perfil da pessoa que depôs */
+.perfil-depoimento {
+    margin-bottom: 31px;
+    display: grid;
+    grid-template-rows: 29px 21px;
+    grid-template-columns: 50px 215px;
+    column-gap: 15px;
+}
+
+/* Imagem da pessoa que depôs */
+.imagem-depoimento {
+    grid-row: 1 / 3;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+/* Nome da pessoa que depôs */
+.nome-depoimento {
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* Instagram da pessoa que depôs */
+.instagram-depoimento {
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* Texto do depoimento */
+.comentario-depoimento {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+
+    /* Código para que o texto corte na 8a linha e termine com reticências*/
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Media query para ajustar as propriedades vistas anteriormente para celular*/
+@media screen and (max-width: 620px) {
+    section#depoimentos-secao {
+        padding: 20px 10px 20px 10px;
+    }
+
+    #depoimentos-secao button#anterior {
+        width: 50px;
+        height: 50px;
+        left: 0;
+    }
+
+    #depoimentos-secao button#proximo {
+        width: 50px;
+        height: 50px;
+        right: 0;
+    }
+
+    #depoimentos-secao div#depoimentos {
+        max-width: 300px;
+        gap: 57.5px;
+    }
+
+    .depoimento {
+        min-width: 100%;
+        max-width: 300px
+    }
+}
+
+/* Media query para ajustar as propriedades vistas anteriormente para telas intermediárias*/
+@media screen and (min-width: 621px) and (max-width: 750px) {
+    #depoimentos-secao {
+        min-width: 600px;
+        padding: 0;
+    }
+
+    #depoimentos {
+        width: 500px;
+    }
+
+    .depoimento {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .nome-depoimento {
+        font-size: 16px;
+    }
+}
+
+/* Media query para ajustar as propriedades vistas anteriormente para tablets*/
+@media screen and (min-width: 751px) and (max-width: 1100px) {
+    section#depoimentos-secao {
+        padding: 50px 0;
+        min-width: 72px;
+    }
+
+    #depoimentos-secao button#anterior {
+        left: 0;
+    }
+
+    #depoimentos-secao button#proximo {
+        right: 0;
+    }
+
+    #depoimentos {
+        min-width: 700px;
+        max-width: 700px;
+        gap: 20px;
+    }
+
+    .perfil-depoimento {
+        grid-template-rows: 17px 16px;
+        gap: 7px;
+    }
+
+    .depoimento {
+        min-width: 220px;
+        max-width: 220px;
+    }
+
+    .nome-depoimento {
+        font-size: 15px;
+    }
+}
