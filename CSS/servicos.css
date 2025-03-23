@@ -33,6 +33,7 @@ div.card{
 }
 
 div.card-divImg{
+    width: ;
     display: flex;
     align-items: center;
     position: relative; /* Faz com que o texto fique "dentro" da img */
@@ -82,7 +83,7 @@ div.card-divInfo{
 }
 
 /* Título do card */
-h2.card-tituloMaior{
+h2.card-tituloNormal{
     font-size: 30px;
     font-family: var(--montesserat);
     color: var(--branco);
@@ -90,6 +91,7 @@ h2.card-tituloMaior{
 
 /* Título menor do card (pra poder caber no card e não quebrar) */
 h2.card-tituloMenor{
+    text-align: center;
     font-size: 25px;
     font-family: var(--montesserat);
     color: var(--branco);
