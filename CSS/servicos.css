@@ -2,6 +2,9 @@
 
 /* Main */
 main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
     padding: 80px 50px;
 }
 
