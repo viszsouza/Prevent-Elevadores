@@ -5,14 +5,15 @@ main{
     padding: 80px 110px;
 }
 
-/* Container */
+/* Container que engloba os textos e a img */
 section.container-center{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
 
-/* Título + Sobre + Dados */
+/* Título do Sobre */
 h1.content-h1{
     color: var(--vermelho);
     font-size: 48px;
@@ -20,6 +21,7 @@ h1.content-h1{
     font-family: var(--montesserat);
 }
 
+/* Texto sobre Prevent */
 p.content-p{
     width: 630px;
     margin: 15px 0 30px 0;
@@ -28,13 +30,14 @@ p.content-p{
     font-family: var(--montesserat);
 }
 
+/* Envolve os dados Clientes e Anos de Garantia */
 div.container-dados{
-    width: fit-content;
     display: flex;
     gap: 90px;
     color: var(--vermelho);
 }
 
+/* Número do dado de Clientes e Anos de Garantia */
 div.content-dados > h2{
     text-align: center;
     font-size: 64px;
@@ -42,6 +45,7 @@ div.content-dados > h2{
     font-family: var(--montesserat);
 }
 
+/* Nome que se refere o dado de Clientes e Anos de Garantia */
 div.content-dados > p{
     text-align: center;
     font-size: 24px;
@@ -177,4 +181,288 @@ section.parteDeBaixo i{
 section.parteDeBaixo i:hover{
     transition: 300ms;
     color: var(--azul-pastel);
+}
+
+
+
+/* Media query */
+@media screen and (max-width: 389px) {/* Main */
+    main{
+        padding: 50px 20px;
+    }
+
+    /* Container que engloba os textos e a img */
+    section.container-center{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* Título do Sobre */
+    h1.content-h1{
+        font-size: 35px;
+    }
+
+    /* Texto sobre Prevent */
+    p.content-p{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    /* Envolve os dados Clientes e Anos de Garantia */
+    div.container-dados{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Número do dado de Clientes e Anos de Garantia */
+    div.content-dados > h2{
+        font-size: 35px;
+    }
+
+    /* Nome que se refere o dado de Clientes e Anos de Garantia */
+    div.content-dados > p{
+        font-size: 20px;
+    }
+
+    /* Imagem */
+    section.container-center > img{
+        width: 100%;
+        height: 425px;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    /* Main */
+    main{
+        padding: 50px 40px;
+    }
+
+    /* Container que engloba os textos e a img */
+    section.container-center{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* Título do Sobre */
+    h1.content-h1{
+        font-size: 40px;
+    }
+
+    /* Texto sobre Prevent */
+    p.content-p{
+        width: 95%;
+    }
+
+    /* Envolve os dados Clientes e Anos de Garantia */
+    div.container-dados{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Número do dado de Clientes e Anos de Garantia */
+    div.content-dados > h2{
+        font-size: 45px;
+    }
+
+    /* Nome que se refere o dado de Clientes e Anos de Garantia */
+    div.content-dados > p{
+        font-size: 20px;
+    }
+
+    /* Imagem */
+    section.container-center > img{
+        width: 90%;
+        height: 425px;
+    }
+}
+
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    /* Main */
+    main{
+        padding: 50px 40px;
+    }
+
+    /* Container que engloba os textos e a img */
+    section.container-center{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* Título do Sobre */
+    h1.content-h1{
+        font-size: 40px;
+    }
+
+    /* Texto sobre Prevent */
+    p.content-p{
+        width: 95%;
+    }
+
+    /* Envolve os dados Clientes e Anos de Garantia */
+    div.container-dados{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    /* Número do dado de Clientes e Anos de Garantia */
+    div.content-dados > h2{
+        font-size: 45px;
+    }
+
+    /* Nome que se refere o dado de Clientes e Anos de Garantia */
+    div.content-dados > p{
+        font-size: 20px;
+    }
+
+    /* Imagem */
+    section.container-center > img{
+        width: 90%;
+        height: 425px;
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+    /* Main */
+    main{
+        padding: 50px 70px;
+    }
+
+    /* Container que engloba os textos e a img */
+    section.container-center{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* Título do Sobre */
+    h1.content-h1{
+        font-size: 40px;
+    }
+
+    /* Texto sobre Prevent */
+    p.content-p{
+        width: 95%;
+    }
+
+    /* Envolve os dados Clientes e Anos de Garantia */
+    div.container-dados{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    /* Número do dado de Clientes e Anos de Garantia */
+    div.content-dados > h2{
+        font-size: 45px;
+    }
+
+    /* Nome que se refere o dado de Clientes e Anos de Garantia */
+    div.content-dados > p{
+        font-size: 20px;
+    }
+
+    /* Imagem */
+    section.container-center > img{
+        width: 90%;
+        height: 425px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 848px){
+    /* Main */
+    main{
+        padding: 50px 70px;
+    }
+
+    /* Container que engloba os textos e a img */
+    section.container-center{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* Título do Sobre */
+    h1.content-h1{
+        font-size: 40px;
+    }
+
+    /* Texto sobre Prevent */
+    p.content-p{
+        width: 95%;
+    }
+
+    /* Envolve os dados Clientes e Anos de Garantia */
+    div.container-dados{
+        justify-content: center;
+        gap: 50px;
+    }
+
+    /* Número do dado de Clientes e Anos de Garantia */
+    div.content-dados > h2{
+        font-size: 45px;
+    }
+
+    /* Nome que se refere o dado de Clientes e Anos de Garantia */
+    div.content-dados > p{
+        font-size: 20px;
+    }
+
+    /* Imagem */
+    section.container-center > img{
+        width: 80%;
+        height: 425px;
+    }
+}
+
+@media only screen and (min-width: 849px) and (max-width: 1098px) {
+    /* Main */
+    main{
+        padding: 50px 70px;
+    }
+
+    /* Título do Sobre */
+    h1.content-h1{
+        font-size: 40px;
+    }
+
+    /* Texto sobre Prevent */
+    p.content-p{
+        width: 95%;
+    }
+
+    /* Envolve os dados Clientes e Anos de Garantia */
+    div.container-dados{
+        gap: 50px;
+    }
+
+    /* Número do dado de Clientes e Anos de Garantia */
+    div.content-dados > h2{
+        font-size: 45px;
+    }
+
+    /* Nome que se refere o dado de Clientes e Anos de Garantia */
+    div.content-dados > p{
+        font-size: 20px;
+    }
+
+    /* Imagem */
+    section.container-center > img{
+        width: 45%;
+        height: 425px;
+    }
+}
+
+@media only screen and (min-width: 1099px) and (max-width: 1280px){
+    /* Texto sobre Prevent */
+    p.content-p{
+        width: 95%;
+    }
+
+    /* Envolve os dados Clientes e Anos de Garantia */
+    div.container-dados{
+        gap: 50px;
+    }
+
+    /* Imagem */
+    section.container-center > img{
+        width: 400px;
+        height: 425px;
+    }
 }
