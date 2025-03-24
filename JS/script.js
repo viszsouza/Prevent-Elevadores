@@ -44,3 +44,25 @@ document.querySelectorAll('.carousel-button').forEach(e => e.addEventListener('c
         behavior: 'smooth',
     });
 }));
+
+// Enviando para o Whatsapp (Formulário)
+function enviarParaWhatsApp() {
+    let nome = document.getElementById("nome").value;
+    let telefone = document.getElementById("telefone").value;
+    let equipamento = document.getElementById("equipamento").value;
+    let email = document.getElementById("email").value;
+    let empresa = document.getElementById("empresa").value;
+    let cidade = document.getElementById("cidade").value;
+
+    
+    let numeroWhatsApp = "5581985742601"; // Número desejado
+    let texto = `%0ANome: ${nome}%0A
+                Email: ${email}%0A
+                Telefone: ${telefone}%0A
+                Empresa: ${empresa}%0A
+                Equipamento: ${equipamento}%0A
+                Cidade: ${cidade}`;
+    
+    let url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+    window.open(url, "_blank");
+}
