@@ -36,11 +36,9 @@ div.card{
 }
 
 div.card-divImg{
-    width: ;
     display: flex;
     align-items: center;
     position: relative; /* Faz com que o texto fique "dentro" da img */
-    
     border-radius: 15px 15px 0 0;
     border: 5px solid var(--vermelho);
 }
@@ -138,4 +136,106 @@ div.card h3{
     background-color: var(--vermelho);
     transform: scale(1.05);
     color: var(--branco);
+}
+
+
+/* Footer */
+footer{
+    padding: 30px 110px 30px 110px;
+    color: var(--branco);
+    background-color: var(--vermelho);
+}
+
+/* Parte de Cima */
+section.parteDeCima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Logo + Informaçõe */
+div.footer-containerInfo{
+    display: flex;
+    gap: 90px;
+}
+
+/* Logo do footer */
+img.footer-img{
+    width: 310px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+/* Localização, Whatsapp e Localização */
+div.footer-infos{
+    width: fit-content;
+    gap: 5px;
+}
+
+i.info-icon{
+    font-size: 20px;
+}
+
+div.footer-infos span{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--lora);
+}
+
+div.footer-infos p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: var(--lora);
+}
+
+/* Link da localização */
+div.footer-infos a{
+    color: var(--branco);
+}
+
+div.footer-infos a:hover{
+    text-decoration: underline;
+}
+
+/* Linha divisória */
+div.footer-linhaDivisoria{
+    height: 1px;
+    width: 100%;
+    margin: 50px 0 25px 0;
+    background-color: var(--branco);
+}
+
+/* Parte de baixo */
+section.parteDeBaixo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.parteDeBaixo p, a{
+    font-size: 15px;
+}
+
+section.parteDeBaixo a{
+    color: var(--branco);
+}
+
+section.parteDeBaixo a:hover{
+    text-decoration: underline;
+}
+
+section.parteDeBaixo > div{
+    display: flex;
+    gap: 20px;
+}
+
+section.parteDeBaixo i{
+    font-size: 25px;
+}
+
+section.parteDeBaixo i:hover{
+    transition: 300ms;
+    color: var(--azul-pastel);
 }
