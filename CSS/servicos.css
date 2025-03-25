@@ -10,15 +10,22 @@ main{
 
 /* Título da section do serviço */
 section.servicos > h1{
-    margin-bottom: 20px;
     text-align: center;
     font-size: 48px;
     font-family: var(--montesserat);
     color: var(--vermelho);
 }
 
-/* Container englobando todos os cards */
-section.servicos > div{
+/* Container que engloba título + carrossel/cards + botão Solicitar Orçamento */
+section.servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Carrossel */
+div.carrossel{
+    margin: 20px 0 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,25 +34,22 @@ section.servicos > div{
 
 /* Card */
 div.card{
-    width: 400px;
-
-    /* Usei o flex pq estava com um espaçamento entre a img e a div debaixo e eu não estava sabendo o motivo */
-    display: flex;
+    width: 400px; /* Tem que ter mesmo width que .card-img */
+    display: flex; /* Usei o flex pq estava com um espaçamento entre a img e a div debaixo e eu não estava sabendo o motivo */
     flex-direction: column;
-    
 }
 
 div.card-divImg{
     display: flex;
     align-items: center;
-    position: relative; /* Faz com que o texto fique "dentro" da img */
+    position: relative; /* Faz com que o texto oculto fique "dentro" da img */
     border-radius: 15px 15px 0 0;
     border: 5px solid var(--vermelho);
 }
 
 /* Imagem do card */
 img.card-img{
-    width: 400px;
+    width: 400px; /* Tem que ter mesmo width que .card */
     height: 450px;
     border-radius: 10px 10px 0 0;
 }
@@ -101,7 +105,7 @@ h2.card-tituloMenor{
 /* Linha divisória do serviço */
 .card-linhaDivisoria{
     height: 2px;
-    width: 250px;
+    width: 95%;
     margin: 5px 0 15px 0;
     background-color: var(--branco);
 }
@@ -136,6 +140,28 @@ div.card h3{
     background-color: var(--vermelho);
     transform: scale(1.05);
     color: var(--branco);
+}
+
+/* Container do botões do Carrossel */
+div.carrossel-botoes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Botão esquerdo/direito do carrossel */
+i.btn-carrossel{
+    font-size: 40px;
+    color: var(--vermelho);
+}
+
+/* Linha divisória dos botões do carrossel */
+div.carrossel-botoesLinhaDivisoria{
+    width: 4px;
+    height: 30px;
+    background-color: var(--vermelho);
 }
 
 
@@ -238,4 +264,252 @@ section.parteDeBaixo i{
 section.parteDeBaixo i:hover{
     transition: 300ms;
     color: var(--azul-pastel);
+}
+
+
+
+/* Media Query */
+@media screen and (max-width: 389px) {
+    /* Main */
+    main{
+        padding: 50px 20px;
+    }
+
+    /* Título da section do serviço */
+    section.servicos > h1{
+        font-size: 35px;
+    }
+
+    /* Container do Carrossel */
+    div.carrossel{
+        width: 100%;
+        justify-content: start;
+        flex-wrap: unset;
+        gap: 30px;
+        overflow: hidden;
+        scroll-behavior: smooth;  /* Suavize quando passa o card do carrossel */
+    }
+
+    /* Card */
+    div.card{
+        width: 250px; /* Tem que ter mesmo width que .card-img */
+    }
+    
+    /* Imagem do card */
+    img.card-img{
+        width: 250px; /* Tem que ter mesmo width que .card */
+        height: 250px;
+    }
+
+    /* Título do card */
+    h2.card-tituloNormal{
+        font-size: 15px;
+    }
+
+    /* Título menor do card (pra poder caber no card e não quebrar) */
+    h2.card-tituloMenor{
+        font-size: 13px;
+    }
+
+    /* Modelo do serviço */
+    div.card h3{
+        font-size: 13px;
+    }
+
+    /* Container do botões do Carrossel */
+    div.carrossel-botoes{
+        display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    /* Main */
+    main{
+        padding: 50px 20px;
+    }
+
+    /* Título da section do serviço */
+    section.servicos > h1{
+        font-size: 35px;
+    }
+
+    /* Container do Carrossel */
+    div.carrossel{
+        width: 100%;
+        justify-content: start;
+        flex-wrap: unset;
+        gap: 30px;
+        overflow: hidden;
+        scroll-behavior: smooth;  /* Suavize quando passa o card do carrossel */
+    }
+
+    /* Card */
+    div.card{
+        width: 250px; /* Tem que ter mesmo width que .card-img */
+    }
+    
+    /* Imagem do card */
+    img.card-img{
+        width: 250px; /* Tem que ter mesmo width que .card */
+        height: 250px;
+    }
+
+    /* Título do card */
+    h2.card-tituloNormal{
+        font-size: 15px;
+    }
+
+    /* Título menor do card (pra poder caber no card e não quebrar) */
+    h2.card-tituloMenor{
+        font-size: 13px;
+    }
+
+    /* Modelo do serviço */
+    div.card h3{
+        font-size: 13px;
+    }
+
+    /* Container do botões do Carrossel */
+    div.carrossel-botoes{
+        display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
+    }
+}
+
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    /* Main */
+    main{
+        padding: 50px 20px;
+    }
+
+    /* Título da section do serviço */
+    section.servicos > h1{
+        font-size: 35px;
+    }
+
+    /* Container do Carrossel */
+    div.carrossel{
+        width: 100%;
+        justify-content: start;
+        flex-wrap: unset;
+        gap: 30px;
+        overflow: hidden;
+        scroll-behavior: smooth;  /* Suavize quando passa o card do carrossel */
+    }
+
+    /* Card */
+    div.card{
+        width: 220px; /* Tem que ter mesmo width que .card-img */
+    }
+    
+    /* Imagem do card */
+    img.card-img{
+        width: 220px; /* Tem que ter mesmo width que .card */
+        height: 250px;
+    }
+
+    /* Título do card */
+    h2.card-tituloNormal{
+        font-size: 15px;
+    }
+
+    /* Título menor do card (pra poder caber no card e não quebrar) */
+    h2.card-tituloMenor{
+        font-size: 13px;
+    }
+
+    /* Modelo do serviço */
+    div.card h3{
+        font-size: 13px;
+    }
+
+    /* Container do botões do Carrossel */
+    div.carrossel-botoes{
+        display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 798px) {
+    /* Container do Carrossel */
+    div.carrossel{
+        width: 100%;
+        justify-content: start;
+        flex-wrap: unset;
+        gap: 30px;
+        overflow: hidden;
+        scroll-behavior: smooth;  /* Suavize quando passa o card do carrossel */
+    }
+
+    /* Card */
+    div.card{
+        width: 280px; /* Tem que ter mesmo width que .card-img */
+    }
+    
+    /* Imagem do card */
+    img.card-img{
+        width: 280px; /* Tem que ter mesmo width que .card */
+        height: 330px;
+    }
+
+    /* Título do card */
+    h2.card-tituloNormal{
+        font-size: 20px;
+    }
+
+    /* Título menor do card (pra poder caber no card e não quebrar) */
+    h2.card-tituloMenor{
+        font-size: 18px;
+    }
+
+    /* Modelo do serviço */
+    div.card h3{
+        font-size: 15px;
+    }
+
+    /* Container do botões do Carrossel */
+    div.carrossel-botoes{
+        display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
+    }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 940px){
+    /* Container do Carrossel */
+    div.carrossel{
+        width: 100%;
+        justify-content: start;
+        flex-wrap: unset;
+        gap: 30px;
+        overflow: hidden;
+        scroll-behavior: smooth;  /* Suavize quando passa o card do carrossel */
+    }
+
+    /* Card */
+    div.card{
+        width: 280px; /* Tem que ter mesmo width que .card-img */
+    }
+    
+    /* Imagem do card */
+    img.card-img{
+        width: 280px; /* Tem que ter mesmo width que .card */
+        height: 330px;
+    }
+
+    /* Título do card */
+    h2.card-tituloNormal{
+        font-size: 20px;
+    }
+
+    /* Título menor do card (pra poder caber no card e não quebrar) */
+    h2.card-tituloMenor{
+        font-size: 18px;
+    }
+
+    /* Modelo do serviço */
+    div.card h3{
+        font-size: 15px;
+    }
+
+    /* Container do botões do Carrossel */
+    div.carrossel-botoes{
+        display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
+    }
 }
