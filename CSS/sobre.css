@@ -75,9 +75,9 @@ section.parteDeCima{
     justify-content: space-between;
 }
 
-/* Logo + Informaçõe */
+/* Informações */
 div.footer-containerInfo{
-    height: 465px;
+    height: 465px;  /* Tem que ter o mesmo height que o iframe */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -90,22 +90,19 @@ img.footer-img{
     margin-bottom: 20px;
 }
 
-/* Localização, Whatsapp e Localização */
-div.footer-infos{
-    width: fit-content;
-    gap: 5px;
-}
-
+/* Icon da informação */
 i.info-icon{
     font-size: 20px;
 }
 
+/* Título da informação */
 div.footer-infos span{
     font-size: 20px;
     font-weight: bold;
     font-family: var(--lora);
 }
 
+/* Texto da informação */
 div.footer-infos p{
     margin-top: 10px;
     font-size: 20px;
@@ -122,11 +119,7 @@ div.footer-infos a:hover{
     text-decoration: underline;
 }
 
-/* Mapa */
-div.mapa{
-    width: fit-content;
-}
-
+/* Título do mapa */
 div.mapa > h1{
     margin-bottom: 20px;
     text-align: center;
@@ -135,9 +128,10 @@ div.mapa > h1{
     font-family: var(--lora);
 }
 
+/* Iframe do mapa */
 div.mapa > iframe{
     width: 440px;
-    height: 465px;
+    height: 465px;  /* Tem que ter o mesmo height que o .footer-containerInfo */
     border-radius: 5px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
@@ -157,10 +151,12 @@ section.parteDeBaixo{
     align-items: center;
 }
 
+/* Quem desenvolveu o site e os links da parte de baixo do footer */
 section.parteDeBaixo p, a{
     font-size: 15px;
 }
 
+/* Links da parte de baixo do footer */
 section.parteDeBaixo a{
     color: var(--branco);
 }
@@ -169,11 +165,13 @@ section.parteDeBaixo a:hover{
     text-decoration: underline;
 }
 
+/* Container do ícones do Instagram e do Facebook */
 section.parteDeBaixo > div{
     display: flex;
     gap: 20px;
 }
 
+/* Ícones do Instagram e do Facebook */
 section.parteDeBaixo i{
     font-size: 25px;
 }
@@ -186,7 +184,8 @@ section.parteDeBaixo i:hover{
 
 
 /* Media query */
-@media screen and (max-width: 389px) {/* Main */
+@media screen and (max-width: 389px) {
+    /* Main */
     main{
         padding: 50px 20px;
     }
@@ -228,6 +227,64 @@ section.parteDeBaixo i:hover{
     section.container-center > img{
         width: 100%;
         height: 425px;
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 20px;
+    }
+
+    /* Parte de Cima */
+    section.parteDeCima{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    /* Contaier que engloba Logo + Informações */
+    div.container-logoInformacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Logo do footer */
+    img.footer-img{
+        width: 250px;
+        height: 60px;
+        margin-bottom: 40px;
+    }
+
+    /* Informações */
+    div.footer-containerInfo{
+        height: 300px;  /* Tem que ter o mesmo height que o iframe */
+        justify-content: space-between;
+    }
+
+    /* Iframe do mapa */
+    div.mapa > iframe{
+        width: 100%;
+        height: 300px;  /* Tem que ter o mesmo height que o .footer-containerInfo */
+    }
+
+    /* Parte de baixo */
+    section.parteDeBaixo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* Container do ícones do Instagram e do Facebook */
+    section.parteDeBaixo > div{
+        display: flex;
+        gap: 50px;
+    }
+
+    /* Ícones do Instagram e do Facebook */
+    section.parteDeBaixo i{
+        font-size: 35px;
     }
 }
 
@@ -274,6 +331,56 @@ section.parteDeBaixo i:hover{
         width: 90%;
         height: 425px;
     }
+    
+
+    /* Footer */
+    footer{
+        padding: 30px 20px;
+    }
+
+    /* Parte de Cima */
+    section.parteDeCima{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    /* Contaier que engloba Logo + Informações */
+    div.container-logoInformacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Informações */
+    div.footer-containerInfo{
+        height: 300px;  /* Tem que ter o mesmo height que o iframe */
+    }
+
+    /* Iframe do mapa */
+    div.mapa > iframe{
+        width: 100%;
+        height: 300px;  /* Tem que ter o mesmo height que o .footer-containerInfo */
+    }
+
+    /* Parte de baixo */
+    section.parteDeBaixo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* Container do ícones do Instagram e do Facebook */
+    section.parteDeBaixo > div{
+        display: flex;
+        gap: 50px;
+    }
+
+    /* Ícones do Instagram e do Facebook */
+    section.parteDeBaixo i{
+        font-size: 35px;
+    }
 }
 
 @media only screen and (min-width: 459px) and (max-width: 598px) {
@@ -318,6 +425,36 @@ section.parteDeBaixo i:hover{
     section.container-center > img{
         width: 90%;
         height: 425px;
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 50px;
+    }
+
+    /* Parte de Cima */
+    section.parteDeCima{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    /* Contaier que engloba Logo + Informações */
+    div.container-logoInformacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Informações */
+    div.footer-containerInfo{
+        height: 300px;  /* Tem que ter o mesmo height que o iframe */
+    }
+
+    /* Iframe do mapa */
+    div.mapa > iframe{
+        width: 100%;
+        height: 300px;  /* Tem que ter o mesmo height que o .footer-containerInfo */
     }
 }
 
@@ -364,6 +501,36 @@ section.parteDeBaixo i:hover{
         width: 90%;
         height: 425px;
     }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 50px;
+    }
+
+    /* Parte de Cima */
+    section.parteDeCima{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    /* Contaier que engloba Logo + Informações */
+    div.container-logoInformacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Informações */
+    div.footer-containerInfo{
+        height: 300px;  /* Tem que ter o mesmo height que o iframe */
+    }
+
+    /* Iframe do mapa */
+    div.mapa > iframe{
+        width: 100%;
+        height: 300px;  /* Tem que ter o mesmo height que o .footer-containerInfo */
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 848px){
@@ -409,6 +576,35 @@ section.parteDeBaixo i:hover{
         width: 80%;
         height: 425px;
     }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 40px;
+    }
+
+    /* Parte de Cima */
+    section.parteDeCima{
+        gap: 10PX;
+    }
+
+    /* Logo do footer */
+    img.footer-img{
+        width: 250px;
+        height: 60px;
+        margin-bottom: 28px;
+    }
+
+    /* Informações */
+    div.footer-containerInfo{
+        height: 425px; /* Tem que ter o mesmo height que o iframe */
+    }
+
+    /* Iframe do mapa */
+    div.mapa > iframe{
+        width: 350px;
+        height: 425px; /* Tem que ter o mesmo height que o .footer-containerInfo */
+    }
 }
 
 @media only screen and (min-width: 849px) and (max-width: 1098px) {
@@ -446,6 +642,23 @@ section.parteDeBaixo i:hover{
     section.container-center > img{
         width: 45%;
         height: 425px;
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 40px;
+    }
+
+    /* Informações */
+    div.footer-containerInfo{
+        height: 425px; /* Tem que ter o mesmo height que o iframe */
+    }
+
+    /* Iframe do mapa */
+    div.mapa > iframe{
+        width: 350px;
+        height: 425px; /* Tem que ter o mesmo height que o .footer-containerInfo */
     }
 }
 
