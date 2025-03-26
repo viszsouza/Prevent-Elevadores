@@ -210,6 +210,7 @@ div.footer-infos span{
     font-family: var(--lora);
 }
 
+/* Informação */
 div.footer-infos p{
     margin-top: 10px;
     font-size: 20px;
@@ -321,9 +322,53 @@ section.parteDeBaixo i:hover{
     div.carrossel-botoes{
         display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
     }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 20px;
+    }
+
+    /* Logo do footer */
+    img.footer-img{
+        width: 200px;
+        height: 50px;
+    }
+    
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        width: 100%;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    /* Acessando a div que envolve Localização */
+    div.footer-containerInfo div.footer-infos:nth-child(2){
+        order: 3;
+    }
+
+    /* Parte de baixo */
+    section.parteDeBaixo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* Container do ícones do Instagram e do Facebook */
+    section.parteDeBaixo > div{
+        display: flex;
+        gap: 50px;
+    }
+
+    /* Ícones do Instagram e do Facebook */
+    section.parteDeBaixo i{
+        font-size: 35px;
+    }
 }
 
-@media only screen and (min-width: 390px) and (max-width: 458px) {
+@media only screen and (min-width: 390px) and  (max-width: 458px) {
     /* Main */
     main{
         padding: 50px 20px;
@@ -373,6 +418,60 @@ section.parteDeBaixo i:hover{
     /* Container do botões do Carrossel */
     div.carrossel-botoes{
         display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 20px;
+    }
+
+    /* Logo do footer */
+    img.footer-img{
+        width: 220px;
+        height: 50px;
+    }
+    
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        width: 100%;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    /* Acessando a div que envolve Localização */
+    div.footer-containerInfo div.footer-infos:nth-child(2){
+        order: 3;
+    }
+
+    /* Acessando a tag p de Localização */
+    div.footer-infos:nth-child(2) p{
+        width: 100%;
+    }
+
+    /* Remove a quebra de linha causado pela tag <br> */
+    br{
+        display: none;
+    }
+
+    /* Parte de baixo */
+    section.parteDeBaixo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* Container do ícones do Instagram e do Facebook */
+    section.parteDeBaixo > div{
+        display: flex;
+        gap: 50px;
+    }
+
+    /* Ícones do Instagram e do Facebook */
+    section.parteDeBaixo i{
+        font-size: 35px;
     }
 }
 
@@ -427,6 +526,34 @@ section.parteDeBaixo i:hover{
     div.carrossel-botoes{
         display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
     }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 40px;
+    }
+    
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        width: 100%;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    /* Acessando a div que envolve Localização */
+    div.footer-containerInfo div.footer-infos:nth-child(2){
+        order: 3;
+    }
+
+    /* Acessando a tag de Localização */
+    div.footer-infos:nth-child(2) p{
+        width: 100%;
+    }
+
+    /* Remove a quebra de linha causado pela tag <br> */
+    br{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 599px) and (max-width: 798px) {
@@ -474,6 +601,34 @@ section.parteDeBaixo i:hover{
     /* Container do botões do Carrossel */
     div.carrossel-botoes{
         display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 50px;
+    }
+    
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        gap: 40px;
+        flex-wrap: wrap-reverse; 
+        justify-content: space-between;
+    }
+
+    /* Acessando a div que envolve Localização */
+    div.footer-containerInfo div.footer-infos:nth-child(2){
+        order: 1;
+    }
+
+    /* Acessando a tag p de Localização */
+    div.footer-infos:nth-child(2) p{
+        width: 100%;
+    }
+
+    /* Remove a quebra de linha causado pela tag <br> */
+    br{
+        display: none;
     }
 }
 
@@ -527,5 +682,24 @@ section.parteDeBaixo i:hover{
     /* Container do botões do Carrossel */
     div.carrossel-botoes{
         display: flex; /* Serve para os botões aparecerem, se usar o valor block os botões quebrarão */
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 30px 50px;
+    }
+
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        gap: 40px;
+    }
+}
+
+/* Exclusivo pro footer */
+@media only screen and (min-width: 941px) and (max-width: 1005px){
+    /* Footer */
+    footer{
+        padding: 30px 50px;
     }
 }
