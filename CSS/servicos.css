@@ -32,13 +32,14 @@ div.carrossel{
     gap: 40px;
 }
 
-/* Card */
+/* Engloba a img e as info do card */
 div.card{
     width: 400px; /* Tem que ter mesmo width que .card-img */
     display: flex; /* Usei o flex pq estava com um espaçamento entre a img e a div debaixo e eu não estava sabendo o motivo */
     flex-direction: column;
 }
 
+/* Engloba a img e o texto oculto do card */
 div.card-divImg{
     display: flex;
     align-items: center;
@@ -450,6 +451,11 @@ section.parteDeBaixo i:hover{
         height: 330px;
     }
 
+    /* Id exclusivo pro card de Modernização de Elevadores */
+    img#imgModernizacao{
+        width: 270.4px;
+    }
+
     /* Título do card */
     h2.card-tituloNormal{
         font-size: 20px;
@@ -482,6 +488,11 @@ section.parteDeBaixo i:hover{
         scroll-behavior: smooth;  /* Suavize quando passa o card do carrossel */
     }
 
+    /* Uso exclusivo para o carrossel de Manutenção*/
+    #contentSlideManutencao{
+        justify-content: center;
+    }
+
     /* Card */
     div.card{
         width: 280px; /* Tem que ter mesmo width que .card-img */
@@ -491,6 +502,11 @@ section.parteDeBaixo i:hover{
     img.card-img{
         width: 280px; /* Tem que ter mesmo width que .card */
         height: 330px;
+    }
+
+    /* Id exclusivo pro card de Modernização de Elevadores */
+    img#imgModernizacao{
+        width: 100%;
     }
 
     /* Título do card */

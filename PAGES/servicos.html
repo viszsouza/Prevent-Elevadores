@@ -339,12 +339,12 @@
             <h1>Manutenção</h1>
 
             <!-- Div que engloba os serviços de Manutenção -->
-            <div class="carrossel">
+            <div class="carrossel" id="contentSlideManutencao">
                 <!-- Card - Modernização de Elevadores -->
                 <div class="card">
                     <!-- Div para englobar a img e o texto oculto -->
                     <div class="card-divImg">
-                        <img src="../IMG/imgSERVICOS/ModernizacaoDeElevadores1.jpeg" class="card-img" alt="Monta Carga">
+                        <img src="../IMG/imgSERVICOS/ModernizacaoDeElevadores1.jpeg" class="card-img" id="imgModernizacao" alt="Monta Carga">
 
                         <!-- Texto que só irá aparecer se passar o cursor do mouse por cima da img -->
                         <p class="img-textoHover">A modernização de elevadores melhora desempenho, segurança e estética, trazendo tecnologia e eficiência.</p>
@@ -380,6 +380,20 @@
                     </div>
                 </div>
             </div>
+            <!-- Fim do Carrossel -->
+
+            <!-- Container do botões do Carrossel -->
+            <div class="carrossel-botoes">
+                <!-- Botão esquerdo do carrossel -->
+                <i class="bi bi-arrow-left-square btn-carrossel" onclick="direcaoServicosManutencao(1)"></i>
+
+                <!-- Linha divisória dos botões do carrossel -->
+                <div class="carrossel-botoesLinhaDivisoria"></div>
+
+                <!-- Botão direito do carrossel -->
+                <i class="bi bi-arrow-right-square btn-carrossel" onclick="direcaoServicosManutencao(2)"></i>
+            </div>
+            <!-- Fim do Carrossel -->
 
             <!-- Botão Solicitar Orçamento -->
             <div class="buttons-inicio">
