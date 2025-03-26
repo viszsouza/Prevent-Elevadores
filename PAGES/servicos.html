@@ -50,7 +50,7 @@
 
             <!-- Começo do Carrossel -->
             <!-- Div que engloba os serviços de Residenciais -->
-            <div class="carrossel" id="contentSlide">
+            <div class="carrossel" id="contentSlideResidenciais">
                 <!-- Card - Plat Hidráulica (Classic) -->
                 <div class="card">
                     <!-- Div para englobar a img e o texto oculto -->
@@ -192,8 +192,9 @@
             <!-- Título da section -->
             <h1>Empreendimentos</h1>
 
+            <!-- Começo do Carrossel -->
             <!-- Div que engloba os serviços de Empreendimentos -->
-            <div class="carrossel">
+            <div class="carrossel" id="contentSlideEmpreendimentos">
                 <!-- Card - Monta Carga 1 -->
                 <div class="card">
                     <!-- Div para englobar a img e o texto oculto -->
@@ -311,6 +312,19 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Container do botões do Carrossel -->
+            <div class="carrossel-botoes">
+                <!-- Botão esquerdo do carrossel -->
+                <i class="bi bi-arrow-left-square btn-carrossel" onclick="direcaoServicosEmpreendimentos(1)"></i>
+
+                <!-- Linha divisória dos botões do carrossel -->
+                <div class="carrossel-botoesLinhaDivisoria"></div>
+
+                <!-- Botão direito do carrossel -->
+                <i class="bi bi-arrow-right-square btn-carrossel" onclick="direcaoServicosEmpreendimentos(2)"></i>
+            </div>
+            <!-- Fim do Carrossel -->
 
             <!-- Botão Solicitar Orçamento -->
             <div class="buttons-inicio">

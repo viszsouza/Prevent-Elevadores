@@ -356,12 +356,12 @@ section.parteDeBaixo i:hover{
 
     /* Título do card */
     h2.card-tituloNormal{
-        font-size: 15px;
+        font-size: 17px;
     }
 
     /* Título menor do card (pra poder caber no card e não quebrar) */
     h2.card-tituloMenor{
-        font-size: 13px;
+        font-size: 17px;
     }
 
     /* Modelo do serviço */
@@ -414,7 +414,7 @@ section.parteDeBaixo i:hover{
 
     /* Título menor do card (pra poder caber no card e não quebrar) */
     h2.card-tituloMenor{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     /* Modelo do serviço */
