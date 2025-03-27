@@ -489,7 +489,11 @@ section#depoimentos-secao {
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
+
+    scroll-margin-top: 80px; /* Faz com que o form não fique grudado com a parte de cima do site ao clicar no link interno que fica na nav (btn Solicitar Orçamento) */
 }
+
+
 
 .contato-text{
     width: 400px;

@@ -112,10 +112,15 @@ nav{
     list-style: none;
 }
 
+.nav-list  li{
+    display: flex;
+    align-items: center;
+}
+
 .nav-list a{
-    padding-block: 15px;
     transition: 300ms;
     font-weight: 500;
+    
 }
 
 .roxo{
@@ -134,22 +139,25 @@ nav{
     text-decoration: underline;
 }
 
-.nav-orç{
-    padding: 5px 15px;
+.nav-btnSolicitarOrcamento{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: 300ms;
     color: var(--branco);
     background-color: var(--vermelho);
-    border-radius: 10px;
     box-shadow: var(--shadow);
 }
 
-.nav-orç:hover{
+.nav-btnSolicitarOrcamento:hover{
+    font-size: 18px;
     background-color: var(--preto);
 }
 
 .nav-list a:hover{
     font-size: 18px;
     text-decoration: underline;
-
 }
 
 /* Hamburguer */
