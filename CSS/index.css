@@ -122,6 +122,16 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    text-align: center;
+}
+
+.dif-mobile{
+    padding: 60px 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .diferenciais h1{
@@ -217,7 +227,8 @@
 }
 
 .container-item-serviço img{
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 390px;
     object-fit: cover;
     border-radius: 5px 5px 0px 0px;
@@ -476,6 +487,7 @@ section#depoimentos-secao {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -539,4 +551,588 @@ section#depoimentos-secao {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Footer */
+footer{
+    padding: 30px 110px 30px 110px;
+    color: var(--branco);
+    background-color: var(--vermelho);
+}
+
+/* Parte de Cima */
+section.parteDeCima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Logo + Informaçõe */
+div.footer-containerInfo{
+    display: flex;
+    gap: 90px;
+}
+
+/* Logo do footer */
+img.footer-img{
+    width: 310px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+/* Localização, Whatsapp e Localização */
+div.footer-infos{
+    width: fit-content;
+    gap: 5px;
+}
+
+i.info-icon{
+    font-size: 20px;
+}
+
+div.footer-infos span{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--lora);
+}
+
+/* Informação */
+div.footer-infos p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: var(--lora);
+}
+
+/* Link da localização */
+div.footer-infos a{
+    color: var(--branco);
+}
+
+div.footer-infos a:hover{
+    text-decoration: underline;
+}
+
+/* Linha divisória */
+div.footer-linhaDivisoria{
+    height: 1px;
+    width: 100%;
+    margin: 50px 0 25px 0;
+    background-color: var(--branco);
+}
+
+/* Parte de baixo */
+section.parteDeBaixo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.parteDeBaixo p, a{
+    font-size: 15px;
+}
+
+section.parteDeBaixo a{
+    color: var(--branco);
+}
+
+section.parteDeBaixo a:hover{
+    text-decoration: underline;
+}
+
+section.parteDeBaixo > div{
+    display: flex;
+    gap: 20px;
+}
+
+section.parteDeBaixo i{
+    font-size: 25px;
+}
+
+section.parteDeBaixo i:hover{
+    transition: 300ms;
+    color: var(--azul-pastel);
+}
+
+
+
+/* Media Query */
+@media screen and (max-width: 389px) {
+    .container-inicio{
+        margin-left: 0%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .container-inicio h1{
+        font-size: 40px;
+    }
+    
+    .container-inicio p{
+        font-size: 16px;
+    }         
+    
+    .frase3{
+        gap: 0;
+    }
+
+    .frase3-img img{
+        width: 200px;
+        display: none;
+    }
+
+    .frase3-text{
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .sobre{
+        gap: 0;
+        text-align: center;
+    }
+
+    .sobre-text{
+        gap: 20px;
+    }
+
+    .buttons-inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-img img{
+        display: none;
+    }
+
+    .invisible{
+        display: none;
+    }
+
+    .diferenciais{
+        gap: 20px;
+    }
+
+    .dif1-text{
+        gap: 10px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .dif-mobile{
+        display: flex;
+        padding: 40px 20px;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .formulario form{
+        width: 100%;
+    }
+
+    .dif1-img img{
+        width: 100%;
+    }
+
+    .dif1-text{
+        width: 100%;
+    }
+
+    /* Footer */
+    footer{
+        padding: 30px 20px;
+    }
+
+    /* Logo do footer */
+    img.footer-img{
+        width: 200px;
+        height: 50px;
+    }
+    
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        width: 100%;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    /* Acessando a div que envolve Localização */
+    div.footer-containerInfo div.footer-infos:nth-child(2){
+        order: 3;
+    }
+
+    /* Parte de baixo */
+    section.parteDeBaixo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* Container do ícones do Instagram e do Facebook */
+    section.parteDeBaixo > div{
+        display: flex;
+        gap: 50px;
+    }
+
+    /* Ícones do Instagram e do Facebook */
+    section.parteDeBaixo i{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 390px) and  (max-width: 458px) {
+    .container-inicio{
+        margin-left: 0%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .container-inicio h1{
+        font-size: 40px;
+    }
+    
+    .container-inicio p{
+        font-size: 16px;
+    }
+
+    .frase3{
+        gap: 0;
+    }
+
+    .frase3-img img{
+        width: 200px;
+        display: none;
+    }
+
+    .frase3-text{
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .sobre{
+        gap: 0;
+        text-align: center;
+    }
+
+    .sobre-text{
+        gap: 20px;
+    }
+
+    .buttons-inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-img img{
+        display: none;
+    }
+
+    .invisible{
+        display: none;
+    }
+
+    .diferenciais{
+        gap: 20px;
+    }
+
+    .dif1-text{
+        gap: 10px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .dif-mobile{
+        display: flex;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .formulario form{
+        width: 100%;
+    }
+    
+    /* Footer */
+    footer{
+        padding: 30px 20px;
+    }
+
+    /* Logo do footer */
+    img.footer-img{
+        width: 220px;
+        height: 50px;
+    }
+    
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        width: 100%;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    /* Acessando a div que envolve Localização */
+    div.footer-containerInfo div.footer-infos:nth-child(2){
+        order: 3;
+    }
+
+    /* Acessando a tag p de Localização */
+    div.footer-infos:nth-child(2) p{
+        width: 100%;
+    }
+
+    /* Remove a quebra de linha causado pela tag <br> */
+    br{
+        display: none;
+    }
+
+    /* Parte de baixo */
+    section.parteDeBaixo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* Container do ícones do Instagram e do Facebook */
+    section.parteDeBaixo > div{
+        display: flex;
+        gap: 50px;
+    }
+
+    /* Ícones do Instagram e do Facebook */
+    section.parteDeBaixo i{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    .container-inicio{
+        margin-left: 0%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .container-inicio h1{
+        font-size: 40px;
+    }
+    
+    .container-inicio p{
+        font-size: 16px;
+    }
+
+    .frase3{
+        gap: 0;
+    }
+
+    .frase3-img img{
+        width: 200px;
+        display: none;
+    }
+
+    .frase3-text{
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .sobre{
+        gap: 0;
+        text-align: center;
+    }
+
+    .sobre-text{
+        gap: 20px;
+    }
+
+    .buttons-inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-img img{
+        display: none;
+    }
+
+    .invisible{
+        display: none;
+    }
+
+    .diferenciais{
+        gap: 20px;
+    }
+
+    .dif1-text{
+        gap: 10px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .dif-mobile{
+        display: flex;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .formulario form{
+        width: 100%;
+    }
+    
+    /* Footer */
+    footer{
+        padding: 30px 40px;
+    }
+    
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        width: 100%;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    /* Acessando a div que envolve Localização */
+    div.footer-containerInfo div.footer-infos:nth-child(2){
+        order: 3;
+    }
+
+    /* Acessando a tag de Localização */
+    div.footer-infos:nth-child(2) p{
+        width: 100%;
+    }
+
+    /* Remove a quebra de linha causado pela tag <br> */
+    br{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 798px) {
+    .container-inicio{
+        width: 80%;
+    }
+
+    .frase3{
+        gap: 0;
+    }
+
+    .frase3-img img{
+        width: 200px;
+        display: none;
+    }
+
+    .frase3-text{
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .sobre-img img{
+        width: 200px;
+    }
+
+    .invisible{
+        display: none;
+    }
+
+    .dif1{
+        flex-direction: column;
+    }
+
+    .dif2{
+        flex-direction: column;
+    }
+
+    
+    
+    /* Footer */
+    footer{
+        padding: 30px 50px;
+    }
+    
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        gap: 40px;
+        flex-wrap: wrap-reverse; 
+        justify-content: space-between;
+    }
+
+    /* Acessando a div que envolve Localização */
+    div.footer-containerInfo div.footer-infos:nth-child(2){
+        order: 1;
+    }
+
+    /* Acessando a tag p de Localização */
+    div.footer-infos:nth-child(2) p{
+        width: 100%;
+    }
+
+    /* Remove a quebra de linha causado pela tag <br> */
+    br{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 940px){
+    .container-inicio{
+        width: 60%;
+    }
+
+    .sobre-img img{
+        width: 200px;
+    }
+
+    .container-item-serviço-text h1{
+        font-size: 18px;
+    }
+
+    .container-item-serviço-text p{
+        font-size: 16px;
+    }
+    
+    /* Footer */
+    footer{
+        padding: 30px 50px;
+    }
+
+    /* Logo + Informaçõe */
+    div.footer-containerInfo{
+        gap: 40px;
+    }
+}
+
+/* Exclusivo pro footer */
+@media only screen and (min-width: 941px) and (max-width: 1005px){
+    .container-inicio{
+        width: 50%;
+    }
+
+    .container-item-serviço-text h1{
+        font-size: 18px;
+    }
+
+    .container-item-serviço-text p{
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 30px 50px;
+    }
 }
