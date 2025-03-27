@@ -90,7 +90,7 @@ div.formulario span:hover{
 @media screen and (max-width: 389px) {
     /* Caixa do fomulário */
     .formulario{
-        top: 57%;
+        top: 52%;
     }
 
     .formulario form{
@@ -108,7 +108,7 @@ div.formulario span:hover{
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     /* Caixa do fomulário */
     .formulario{
-        top: 57%;
+        top: 52%;
     }
 
     .formulario form{
