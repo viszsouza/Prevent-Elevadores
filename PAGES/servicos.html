@@ -16,6 +16,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/base.css">
     <link rel="stylesheet" href="../CSS/servicos.css">
+    <link rel="stylesheet" href="../CSS/modalFormulario.css">
     <!-- JS -->
     <script src="../JS/script.js" defer></script>
     <script src="../JS/servicosCarrossel.js" defer></script>
@@ -41,12 +42,13 @@
         </ul>
     </nav>
 
+    <!-- Whatsapp Flutuante -->
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5511956647945&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" target="_blank"><img src="../IMG/whatsapp (4).png" alt="Icone WhatsApp"></a>
+    </div>
+
     <!-- Main -->
     <main>
-        <!-- Whatsapp Flutuante -->
-        <div class="whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=5511956647945&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!" target="_blank"><img src="../IMG/whatsapp (4).png" alt="Icone WhatsApp"></a>
-        </div>
 
         <!-- Residenciais -->
         <!-- Container que engloba título + carrossel/cards + botão Solicitar Orçamento -->
@@ -410,34 +412,46 @@
         <!-- Modal do formulário -->
         <div class="formulario">
             <form action="">
+                <!-- Nome -->
                 <div class="formulario-input">
                     <label for="">Seu nome completo*</label>
                     <input type="text" id="nome" placeholder="Digite seu nome aqui">
                 </div>
 
+                <!-- E-mail -->
                 <div class="formulario-input">
                     <label for="">Seu email*</label>
                     <input type="text" id="email" placeholder="Digite seu email aqui">
                 </div>
 
-                <div class="formulario-input">
-                    <label for="">Seu telefone*</label>
-                    <input type="text" id="telefone" placeholder="Digite seu telefone aqui">
-                </div>
+                <!-- Dupla - Telefone e Empresa -->
+                <div class="formulario-dupla">
+                    <!-- Telefone -->
+                    <div class="formulario-input">
+                        <label for="">Seu telefone*</label>
+                        <input type="text" id="telefone" placeholder="Digite seu telefone aqui">
+                    </div>
 
-                <div class="formulario-input">
-                    <label for="">Empresa</label>
-                    <input type="text" id="empresa" placeholder="Digite a empresa aqui">
+                    <!-- Empresa -->
+                    <div class="formulario-input">
+                        <label for="">Empresa</label>
+                        <input type="text" id="empresa" placeholder="Digite a empresa aqui">
+                    </div>
                 </div>
                 
-                <div class="formulario-input">
-                    <label for="">Equipamento que tem interesse</label>
-                    <input type="text" id="equipamento" placeholder="Digite o equipamento aqui">
-                </div>
+                <!-- Dupla - Equipamento e Cidade -->
+                <div class="formulario-dupla">
+                    <!-- Equipamento -->
+                    <div class="formulario-input">
+                        <label for="">Equipamento que tem interesse</label>
+                        <input type="text" id="equipamento" placeholder="Digite o equipamento aqui">
+                    </div>
 
-                <div class="formulario-input">
-                    <label for="">Cidade </label>
-                    <input type="text" id="cidade" placeholder="Digite a cidade aqui">
+                    <!-- Cidade -->
+                    <div class="formulario-input">
+                        <label for="">Cidade </label>
+                        <input type="text" id="cidade" placeholder="Digite a cidade aqui">
+                    </div>
                 </div>
 
                 <div class="form-button">
