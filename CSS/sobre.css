@@ -269,11 +269,12 @@ section.parteDeBaixo i:hover{
 
     /* Parte de baixo */
     section.parteDeBaixo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         flex-direction: column-reverse;
         gap: 20px;
+    }
+
+    section.parteDeBaixo p{
+        text-align: center;
     }
 
     /* Container do ícones do Instagram e do Facebook */
@@ -364,11 +365,12 @@ section.parteDeBaixo i:hover{
 
     /* Parte de baixo */
     section.parteDeBaixo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         flex-direction: column-reverse;
         gap: 20px;
+    }
+
+    section.parteDeBaixo p{
+        text-align: center;
     }
 
     /* Container do ícones do Instagram e do Facebook */
@@ -456,6 +458,16 @@ section.parteDeBaixo i:hover{
         width: 100%;
         height: 300px;  /* Tem que ter o mesmo height que o .footer-containerInfo */
     }
+
+    /* Parte de baixo */
+    section.parteDeBaixo{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    section.parteDeBaixo p{
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 599px) and (max-width: 768px) {
@@ -530,6 +542,12 @@ section.parteDeBaixo i:hover{
     div.mapa > iframe{
         width: 100%;
         height: 300px;  /* Tem que ter o mesmo height que o .footer-containerInfo */
+    }
+
+    /* Parte de baixo */
+    section.parteDeBaixo{
+        flex-direction: column-reverse;
+        gap: 20px;
     }
 }
 

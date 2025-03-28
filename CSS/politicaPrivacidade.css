@@ -1,0 +1,18 @@
+@import url("base.css");
+
+h1, h2{
+    margin: 20px 0 5px 10px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cinza);
+}
+
+p{
+    margin-left: 10px;
+    line-height: 25px;
+    font-size: 18px;
+    font-family: var(--montesserat);
+}
+
+a{
+    color: var(--vermelho);
+}
