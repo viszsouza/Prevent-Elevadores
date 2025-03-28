@@ -45,8 +45,8 @@ document.querySelectorAll('.carousel-button').forEach(e => e.addEventListener('c
     });
 }));
 
-// Enviando para o WhatsApp (Formulário)
-function enviarParaWhatsApp() {
+// Bloquear se o form for enviado com algum campo vazio
+function verificarForm() {
     let campos = document.querySelectorAll("#formulario input");
     let preenchido = true;
 
@@ -68,6 +68,7 @@ function enviarParaWhatsApp() {
     
 }
 
+// Enviando para o WhatsApp (Formulário)
 function enviarParaWhatsApp() {
     let campos = document.querySelectorAll("#formulario input");
     let preenchido = true;
