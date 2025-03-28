@@ -55,7 +55,7 @@ function enviarParaWhatsApp() {
     let cidade = document.getElementById("cidade").value;
 
     
-    let numeroWhatsApp = "5581985742601"; // Número desejado
+    let numeroWhatsApp = "5581996550146"; // Número desejado
     let texto = `%0ANome: ${nome}%0A
                 Email: ${email}%0A
                 Telefone: ${telefone}%0A
