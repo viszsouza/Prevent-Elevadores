@@ -45,24 +45,59 @@ document.querySelectorAll('.carousel-button').forEach(e => e.addEventListener('c
     });
 }));
 
-// Enviando para o Whatsapp (Formulário)
+// Enviando para o WhatsApp (Formulário)
 function enviarParaWhatsApp() {
-    let nome = document.getElementById("nome").value;
-    let telefone = document.getElementById("telefone").value;
-    let equipamento = document.getElementById("equipamento").value;
-    let email = document.getElementById("email").value;
-    let empresa = document.getElementById("empresa").value;
-    let cidade = document.getElementById("cidade").value;
+    let campos = document.querySelectorAll("#formulario input");
+    let preenchido = true;
 
+    // Verifica se todos os campos estão preenchidos
+    campos.forEach(campo => {
+        if (!campo.value.trim()) {
+            preenchido = false;
+        }
+    });
+
+    if (!preenchido) {
+        document.getElementById("erro-msg").style.display = "block";
+        return; // Impede o envio
+    }
+
+    document.getElementById("erro-msg").style.display = "none"; // Esconde a mensagem de erro
+
+    enviarParaWhatsApp();
     
-    let numeroWhatsApp = "5581996550146"; // Número desejado 
-    let texto = `%0ANome: ${nome}%0A
-                Email: ${email}%0A
-                Telefone: ${telefone}%0A
-                Empresa: ${empresa}%0A
-                Equipamento: ${equipamento}%0A
-                Cidade: ${cidade}`;
+}
+
+function enviarParaWhatsApp() {
+    let campos = document.querySelectorAll("#formulario input");
+    let preenchido = true;
+
+    // Verifica se todos os campos estão preenchidos
+    campos.forEach(campo => {
+        if (!campo.value.trim()) {
+            preenchido = false;
+        }
+    });
+
+    if (!preenchido) {
+        document.getElementById("erro-msg").style.display = "block";
+        return; // Impede o envio
+    }
+
+    document.getElementById("erro-msg").style.display = "none"; // Esconde a mensagem de erro
+
+    let nome = document.getElementById("nome").value.trim();
+    let telefone = document.getElementById("telefone").value.trim();
+    let equipamento = document.getElementById("equipamento").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let empresa = document.getElementById("empresa").value.trim();
+    let cidade = document.getElementById("cidade").value.trim();
+
+    let numeroWhatsApp = "5581979057103"; // Número desejado - 81 996550146
+
+    let texto = `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nEmpresa: ${empresa}\nEquipamento: ${equipamento}\nCidade: ${cidade}`;
+
+    let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
     
-    let url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
     window.open(url, "_blank");
 }

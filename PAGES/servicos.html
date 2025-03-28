@@ -409,57 +409,61 @@
             </div>
         </section>
 
-        <!-- Modal do formulário -->
-        <div class="formulario">
-            <form action="">
-                <!-- Nome -->
+       <!-- Modal do formulário -->
+       <div class="formulario">
+        <form id="formulario">
+            <div class="formulario-input">
+                <label for="nome">Seu nome completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome aqui" required>
+            </div>
+    
+            <div class="formulario-input">
+                <label for="email">Seu email</label>
+                <input type="text" id="email" placeholder="Digite seu email aqui" required>
+            </div>
+    
+            <!-- Dupla - Telefone e Empresa -->
+            <div class="formulario-dupla">
+                <!-- Telefone -->
                 <div class="formulario-input">
-                    <label for="">Seu nome completo</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome aqui">
+                    <label for="">Seu telefone</label>
+                    <input type="text" id="telefone" placeholder="Digite seu telefone aqui">
                 </div>
 
-                <!-- E-mail -->
+                <!-- Empresa -->
                 <div class="formulario-input">
-                    <label for="">Seu email</label>
-                    <input type="text" id="email" placeholder="Digite seu email aqui">
+                    <label for="">Empresa</label>
+                    <input type="text" id="empresa" placeholder="Digite a empresa aqui">
+                </div>
+            </div>
+            
+            <!-- Dupla - Equipamento e Cidade -->
+            <div class="formulario-dupla">
+                <!-- Equipamento -->
+                <div class="formulario-input">
+                    <label for="">Equipamento que tem interesse</label>
+                    <input type="text" id="equipamento" placeholder="Digite o equipamento aqui">
                 </div>
 
-                <!-- Dupla - Telefone e Empresa -->
-                <div class="formulario-dupla">
-                    <!-- Telefone -->
-                    <div class="formulario-input">
-                        <label for="">Seu telefone</label>
-                        <input type="text" id="telefone" placeholder="Digite seu telefone aqui">
-                    </div>
-
-                    <!-- Empresa -->
-                    <div class="formulario-input">
-                        <label for="">Empresa</label>
-                        <input type="text" id="empresa" placeholder="Digite a empresa aqui">
-                    </div>
+                <!-- Cidade -->
+                <div class="formulario-input">
+                    <label for="">Cidade </label>
+                    <input type="text" id="cidade" placeholder="Digite a cidade aqui">
                 </div>
-                
-                <!-- Dupla - Equipamento e Cidade -->
-                <div class="formulario-dupla">
-                    <!-- Equipamento -->
-                    <div class="formulario-input">
-                        <label for="">Equipamento que tem interesse</label>
-                        <input type="text" id="equipamento" placeholder="Digite o equipamento aqui">
-                    </div>
+            </div>
 
-                    <!-- Cidade -->
-                    <div class="formulario-input">
-                        <label for="">Cidade </label>
-                        <input type="text" id="cidade" placeholder="Digite a cidade aqui">
-                    </div>
-                </div>
+    
+            <!-- Mensagem aparece se todos os campos não forem preenchidos -->
+            <p id="erro-msg" style="color: rgb(0, 0, 0); background-color: rgb(255, 251, 1); padding: 5px 10px; width: fit-content; border-radius: 12px; display: none;">Preencha todos os campos!</p>
+    
+            <!-- Botão para enviar o form -->
+            <div class="form-button">
+                <button type="button" onclick="enviarParaWhatsApp()">Enviar</button>
+            </div>
 
-                <div class="form-button">
-                    <a href=""><button onclick="enviarParaWhatsApp()">Enviar</button></a>
-                </div>
-                <span onclick="ocultarModal()" >Sair do Formulário</span>
-            </form>
-        </div>
+            <span onclick="ocultarModal()" >Sair do Formulário</span>
+        </form>
+    </div>
     </main>
 
     <!-- Footer -->
