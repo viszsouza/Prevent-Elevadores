@@ -14,7 +14,7 @@ let currentIndex = window.innerWidth <= 750 ? 0 : 1;
 document.querySelectorAll('.carousel-button').forEach(e => e.addEventListener('click', () => {
     // Se for o da esquerda diminui o valor, se não, aumenta
     if (window.innerWidth >= 751) {
-        currentIndex += e.id === 'anterior' ? -3 : 3;
+        currentIndex += e.id === 'anterior' ? -1 : 1;
     } else {
         currentIndex += e.id === 'anterior' ? -1 : 1;
     }
