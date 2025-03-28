@@ -349,7 +349,6 @@ section#depoimentos-secao {
 /* Perfil da pessoa que depôs */
 .perfil-depoimento {
     margin-bottom: 31px;
-    display: grid;
     grid-template-rows: 29px 21px;
     grid-template-columns: 50px 215px;
     column-gap: 15px;
