@@ -443,7 +443,7 @@
             <div class="formulario-dupla">
                 <!-- Equipamento -->
                 <div class="formulario-input">
-                    <label for="">Equipamento que tem interesse</label>
+                    <label for="">Equipamento de interesse</label>
                     <input type="text" id="equipamento" placeholder="Digite o equipamento aqui">
                 </div>
 
@@ -456,14 +456,18 @@
 
     
             <!-- Mensagem aparece se todos os campos não forem preenchidos -->
-            <p id="erro-msg" style="color: rgb(0, 0, 0); background-color: rgb(255, 251, 1); padding: 5px 10px; width: fit-content; border-radius: 12px; display: none;">Preencha todos os campos!</p>
+            <p id="form-mensagemErro">Preencha todos os campos!</p>
     
-            <!-- Botão para enviar o form -->
-            <div class="form-button">
-                <button type="button" onclick="enviarParaWhatsApp()">Enviar</button>
+            <!-- Caixa com o botões do form -->
+            <div class="form-buttos">
+                <!-- Botão Enviar do formulário -->
+                <div class="form-buttonEnviar">
+                    <button type="button" onclick="enviarParaWhatsApp()">Enviar</button>
+                </div>
+    
+                <!-- Botão para sair do formulário -->
+                <span onclick="ocultarModal()">Sair</span>
             </div>
-
-            <span onclick="ocultarModal()" >Sair do Formulário</span>
         </form>
     </div>
     </main>

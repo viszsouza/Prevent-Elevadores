@@ -536,6 +536,19 @@ section#depoimentos-secao {
     flex-direction: column;
 }
 
+/* Mensagem aparece se todos os campos não forem preenchidos */
+#form-mensagemErro{
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--preto);
+    background-color: var(--amarelo);
+    margin: 10px 0;
+}
+
 .formulario button{
     background-color: var(--vermelho);
     padding: 10px 40px;

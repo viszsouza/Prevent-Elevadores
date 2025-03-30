@@ -58,11 +58,11 @@ function verificarForm() {
     });
 
     if (!preenchido) {
-        document.getElementById("erro-msg").style.display = "block";
+        document.getElementById("form-mensagemErro").style.display = "block";
         return; // Impede o envio
     }
 
-    document.getElementById("erro-msg").style.display = "none"; // Esconde a mensagem de erro
+    document.getElementById("form-mensagemErro").style.display = "none"; // Esconde a mensagem de erro
 
     enviarParaWhatsApp();
     
@@ -81,11 +81,11 @@ function enviarParaWhatsApp() {
     });
 
     if (!preenchido) {
-        document.getElementById("erro-msg").style.display = "block";
+        document.getElementById("form-mensagemErro").style.display = "block";
         return; // Impede o envio
     }
 
-    document.getElementById("erro-msg").style.display = "none"; // Esconde a mensagem de erro
+    document.getElementById("form-mensagemErro").style.display = "none"; // Esconde a mensagem de erro
 
     let nome = document.getElementById("nome").value.trim();
     let telefone = document.getElementById("telefone").value.trim();

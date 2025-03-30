@@ -1,16 +1,16 @@
 /* Caixa do fomulário */
 .formulario{
     display: none;
-
     position: fixed;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -40%);
-
     background-color: var(--vermelho);
     box-shadow: var(--shadow);
+    z-index: 1001;
 }
 
+/* Formulário */
 .formulario form{
     display:  flex;
     flex-direction: column;
@@ -20,6 +20,7 @@
     width: 500px;
 }
 
+/* Inputs do form */
 .formulario-input input{
     background-color: var(--branco);
     padding: 15px;
@@ -43,42 +44,48 @@ div.formulario-dupla div.formulario-input{
     width: 100%;
 }
 
-.formulario button{
-    background-color: var(--vermelho);
-    padding: 10px 40px;
-    border: solid 3px var(--branco);
+/* Mensagem aparece se todos os campos não forem preenchidos */
+#form-mensagemErro{
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--preto);
+    background-color: var(--amarelo);
+    margin: 10px 0;
+}
 
-    color: var(--branco);
+/* Caixa com o botões do form */
+div.form-buttos{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Propriedades padrões dos botões do form */
+div.form-buttos button, div.form-buttos span{
+    cursor: pointer;
+    border: solid 3px var(--branco);
+    padding: 10px 30px;
     font-size: 20px;
     font-family: 'Montserrat',sans-serif;
     font-weight: 500;
-
-    transition: 300ms;
-    box-shadow: var(--shadow);
-}
-
-.formulario button:hover{
-    transform: scale(1.05);
-}
-
-.form-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Span do formulário */
-div.formulario span{
-    padding: 5px 0;
-    text-align: center;
-    border: 1px solid var(--branco);
-    border-radius: 10px;
     color: var(--branco);
-    transition: 0.3s;
-    cursor: pointer;
+    transition: 300ms;
 }
 
-div.formulario span:hover{
+/* Botão "Enviar" do form */
+.form-buttos button{
+    background-color: var(--verde);
+}
+
+/* Botão "Sair" do form */
+div.form-buttos span{
+    background-color: var(--vermelho2);
+}
+
+div.form-buttos button:hover, div.form-buttos span:hover{
     transform: scale(1.05);
     color: var(--vermelho);
     background-color: var(--branco);
@@ -90,56 +97,84 @@ div.formulario span:hover{
 @media screen and (max-width: 389px) {
     /* Caixa do fomulário */
     .formulario{
-        top: 52%;
+        top: 45%; 
     }
 
+    /* Formulário */
     .formulario form{
         padding: 20px;
-        width: 330px;
+        width: 320px;
+        gap: 10px;
     }
 
-    /* Div para deixar dois inputs lado a lado */
+    /* Inputs do form */
+    .formulario-input input{
+        padding: 10px;
+    }
+
+    /* Div para deixar os inputs dupla lado a lado */
     div.formulario-dupla{
-        flex-direction: column;
-        gap: 20px;
+        display: flex;
+        align-items: end;
+    }
+
+    /* Fomulários que são duplas */
+    div.formulario-dupla div.formulario-input{
+        width: 48%;
+    }
+
+    /* Propriedades padrões dos botões do form */
+    div.form-buttos button, div.form-buttos span{
+        padding: 5px 20px;
     }
 }
 
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     /* Caixa do fomulário */
     .formulario{
-        top: 52%;
+        top: 40%;
     }
 
+    /* Formulário */
     .formulario form{
         padding: 20px;
-        width: 370px;
+        width: 350px;
     }
 
-    /* Div para deixar dois inputs lado a lado */
+    /* Inputs do form */
+    .formulario-input input{
+        padding: 10px;
+    }
+
+    /* Div para deixar os inputs dupla lado a lado */
     div.formulario-dupla{
-        flex-direction: column;
-        gap: 20px;
+        display: flex;
+        align-items: end;
+    }
+
+    /* Fomulários que são duplas */
+    div.formulario-dupla div.formulario-input{
+        width: 48%;
     }
 }
 
 @media only screen and (min-width: 459px) and (max-width: 598px) {
     /* Caixa do fomulário */
     .formulario{
-        top: 48%;
+        top: 40%; 
     }
 
     .formulario form{
         padding: 20px;
         width: 430px;
     }
-    
-    /* Div para deixar dois inputs lado a lado */
+
+    /* Div para deixar os inputs dupla lado a lado */
     div.formulario-dupla{
         display: flex;
         align-items: end;
     }
-
+    
     /* Fomulários que são duplas */
     div.formulario-dupla div.formulario-input{
         width: 185px;
